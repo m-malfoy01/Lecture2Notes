@@ -1,0 +1,172 @@
+/* style.css — Scoped Modern Midnight Study Studio UI/UX */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Global App Container */
+
+.stApp {
+    background-color: #0f172a !important;
+    color: #f8fafc !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+
+/* Scoped Typography (Excludes Streamlit internal icons and toolbars) */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.stMarkdown p,
+.stMarkdown span {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+h1 {
+    color: #f8fafc !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.025em;
+}
+
+h2,
+h3 {
+    color: #cbd5e1 !important;
+    font-weight: 600 !important;
+}
+
+p,
+span,
+label {
+    color: #94a3b8 !important;
+}
+
+
+/* Sidebar Refinement */
+
+section[data-testid="stSidebar"] {
+    background-color: #1e293b !important;
+    border-right: 1px solid #334155 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e2e8f0 !important;
+}
+
+
+/* Primary Action CTA ("Generate Visual Notes") */
+
+
+/* Primary Action CTA ("Generate Visual Notes") — High Contrast White Text */
+
+.stButton>button {
+    width: 100% !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    height: 3.5em !important;
+    background: linear-gradient(135deg, #f43f5e 0%, #fb7185 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(244, 63, 94, 0.35) !important;
+    cursor: pointer !important;
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
+
+.stButton>button p,
+.stButton>button span,
+.stButton>button div {
+    color: #ffffff !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5) !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.5) !important;
+}
+
+
+/* File Uploader Drop Zone */
+
+[data-testid="stFileUploader"] {
+    background-color: #1e293b !important;
+    border: 2px dashed #0ea5e9 !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    width: 100% !important;
+}
+
+[data-testid="stFileUploader"] section {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+
+/* Clean Button Label Override for File Uploader */
+
+[data-testid="stFileUploader"] section button {
+    background-color: #0ea5e9 !important;
+    border-radius: 8px !important;
+    border: none !important;
+    color: transparent !important;
+    position: relative !important;
+}
+
+[data-testid="stFileUploader"] section button::after {
+    content: "Browse Files" !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+/* Study Tip Info Box */
+
+.stInfo {
+    background-color: rgba(14, 165, 233, 0.1) !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(14, 165, 233, 0.3) !important;
+    border-radius: 12px !important;
+    padding: 14px 18px !important;
+}
+
+.stInfo * {
+    color: #cbd5e1 !important;
+}
+
+
+/* Visual Cheat Sheet Note Box */
+
+.note-box {
+    background-color: #1e293b !important;
+    padding: 32px !important;
+    border-radius: 16px !important;
+    border: 1px solid #334155 !important;
+    margin-top: 16px !important;
+    margin-bottom: 24px !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3) !important;
+}
+
+.note-box h1,
+.note-box h2,
+.note-box h3 {
+    color: #38bdf8 !important;
+}
+
+.note-box p,
+.note-box li {
+    color: #e2e8f0 !important;
+    line-height: 1.6;
+}
